@@ -46,6 +46,7 @@ states_coords = {
     'Yobe': (12.0035, 11.8307),
     'Zamfara': (12.1700, 6.6700),
 }
+exists = set()
 
 # 2. Selenium setup
 service = Service("./chromedriver-win64/chromedriver.exe")
@@ -56,6 +57,12 @@ wait = WebDriverWait(driver, 30)
 base_url = "https://aquastat.fao.org/climate-information-tool/complete-climate-data"
 
 for state, (lat, lon) in states_coords.items():
+    if state in exists:
+        print(f"→ {state} already exists, skipping.")
+        continue
+    else:
+        exists.add(state)
+        
     url = f"{base_url}?lat={lat}&lon={lon}&year=2022&datasource=agera5"
     driver.get(url)
 
@@ -86,7 +93,7 @@ for state, (lat, lon) in states_coords.items():
 
     # build DataFrame and save
     df = pd.DataFrame(data, columns=headers)
-    df.to_csv(f"{state.replace(' ', '_')}_climate_2022.csv", index=False)
+    df.to_csv(f"Datasets/AquaStat Data Each state/{state.replace(' ', '_')}_climate_2022.csv", index=False)
     print(f"→ Saved {state}.csv")
     time.sleep(2)   # be gentle on the server
 
