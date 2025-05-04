@@ -11,6 +11,7 @@ import time
 # 1. 36 states + centroid coords
 states_coords = {
     'Abia': (5.5320, 7.4860),
+    'FederalCapitalTerritory': (9.0765, 7.3986),
     'Adamawa': (9.3265, 12.3984),
     'Akwa Ibom': (5.0300, 7.9400),
     'Anambra': (6.2109, 7.0710),

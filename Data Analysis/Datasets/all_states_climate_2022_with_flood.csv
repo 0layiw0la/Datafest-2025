@@ -2,7 +2,7 @@ Month,"Prc.
 mm/m",Tmp. min.,Tmp. max.,Tmp. Mean,"Rel. Hum.
 %",Sun shine,"Wind (2m)
 m/s","ETo
-mm/m",State,flood
+mm/m",state,flood
 Jan,11,21.5,34.9,28.2,36.6,"19,631,786",2,155,Abia,0
 Feb,3,22.7,36.2,29.4,36.5,"20,879,191",1.9,149,Abia,0
 Mar,71,24.3,34.9,29.6,51.8,"19,018,698",2.1,151,Abia,0
@@ -171,6 +171,18 @@ Sep,277,21.5,27.8,24.7,74.5,"15,391,808",2.6,100,Enugu,1
 Oct,231,21.7,28.9,25.3,69.5,"15,838,067",2.1,108,Enugu,0
 Nov,27,22.1,31.6,26.9,51.5,"18,644,088",2.3,134,Enugu,0
 Dec,1,21.7,33.7,27.7,31.3,"19,881,741",2.7,174,Enugu,0
+Jan,0,20.9,34.2,27.6,20.9,"21,791,866",2.4,184,FederalCapitalTerritory,0
+Feb,0,21.5,35.9,28.7,16.8,"23,679,748",2.3,179,FederalCapitalTerritory,0
+Mar,3,24,36.8,30.4,33.3,"23,492,701",1.9,188,FederalCapitalTerritory,0
+Apr,40,23.9,34.1,29,50,"21,326,775",1.9,159,FederalCapitalTerritory,0
+May,74,23.3,32.3,27.8,61,"20,692,630",1.5,143,FederalCapitalTerritory,0
+Jun,173,22.3,30.1,26.2,69.3,"18,192,695",1.3,116,FederalCapitalTerritory,0
+Jul,127,21.6,28.1,24.9,73.7,"15,686,296",1.4,103,FederalCapitalTerritory,0
+Aug,235,21.1,27.7,24.4,75,"15,046,138",1.6,99,FederalCapitalTerritory,0
+Sep,399,20.9,27.7,24.3,73.8,"14,828,940",1.4,95,FederalCapitalTerritory,0
+Oct,120,21.4,30.7,26,57.8,"19,130,547",1.5,129,FederalCapitalTerritory,0
+Nov,0,21.3,33.7,27.5,29.7,"21,385,909",2,160,FederalCapitalTerritory,0
+Dec,0,20.6,33.8,27.2,22.3,"21,232,543",2.4,177,FederalCapitalTerritory,0
 Jan,0,17.1,29.1,23.1,15.3,"22,282,819",3.8,206,Gombe,0
 Feb,0,18.1,31.6,24.9,11.3,"24,264,563",3.7,209,Gombe,0
 Mar,0,21.9,36.6,29.2,10.3,"25,744,607",3.3,253,Gombe,0

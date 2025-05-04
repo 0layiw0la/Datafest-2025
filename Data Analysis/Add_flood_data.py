@@ -34,7 +34,7 @@ flood_pairs = set(zip(
 
 # 7. add flood flag to climate df
 climate["flood"] = climate.apply(
-    lambda r: 1 if (r["Month"], r["State"]) in flood_pairs else 0,
+    lambda r: 1 if (r["Month"], r["state"]) in flood_pairs else 0,
     axis=1
 )
 
