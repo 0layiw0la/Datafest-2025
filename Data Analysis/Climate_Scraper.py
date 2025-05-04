@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
+from pathlib import Path
 import pandas as pd
 import time
 
@@ -46,7 +47,15 @@ states_coords = {
     'Yobe': (12.0035, 11.8307),
     'Zamfara': (12.1700, 6.6700),
 }
-exists = set()
+
+# dynamically detect which states already have CSVs so we can skip.
+out_dir = Path("Datasets/AquaStat Data Each state")
+exists = {
+    p.stem
+     .replace("_climate_2022", "")
+     .replace("_", " ")
+    for p in out_dir.glob("*_climate_2022.csv")
+}
 
 # 2. Selenium setup
 service = Service("./chromedriver-win64/chromedriver.exe")
@@ -55,14 +64,13 @@ driver = webdriver.Chrome(service=service, options=options)
 wait = WebDriverWait(driver, 30)
 
 base_url = "https://aquastat.fao.org/climate-information-tool/complete-climate-data"
-
+count = 0
 for state, (lat, lon) in states_coords.items():
     if state in exists:
+        count += 1
         print(f"→ {state} already exists, skipping.")
         continue
-    else:
-        exists.add(state)
-        
+
     url = f"{base_url}?lat={lat}&lon={lon}&year=2022&datasource=agera5"
     driver.get(url)
 
@@ -94,7 +102,8 @@ for state, (lat, lon) in states_coords.items():
     # build DataFrame and save
     df = pd.DataFrame(data, columns=headers)
     df.to_csv(f"Datasets/AquaStat Data Each state/{state.replace(' ', '_')}_climate_2022.csv", index=False)
-    print(f"→ Saved {state}.csv")
+    count += 1
+    print(f"→ Saved {state}.csv",f"{state} {count} of 36")
     time.sleep(2)   # be gentle on the server
 
 driver.quit()
