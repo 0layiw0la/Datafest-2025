@@ -106,7 +106,21 @@ def render_market_section(geojson, market_df,full_survey_df):
     st.header("Transportation")
     st.write("")
 
-    counts = new_df['produce_transport_method'].value_counts().sort_values(ascending=False).reset_index()
+    counts = full_survey_df['produce_transport_method'].value_counts().sort_values(ascending=False).reset_index()
     counts['count'] = (counts['count'] / counts['count'].sum())*100
     counts = counts.drop(index=6)
-    full_survey_df
+
+    fig = px.bar(
+    counts,
+    y='produce_transport_method',
+    x='count',
+    orientation='h',
+    title=f"Transport Methods Nigerian Farmers",
+    labels={'produce_transport_method': 'Transport Method', 'count': 'Percentage of farmers who use the method'},
+    color='produce_transport_method',
+    color_discrete_sequence=px.colors.sequential.YlOrRd
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
+    
+    
