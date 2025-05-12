@@ -7,6 +7,7 @@ from sections.storage import render_storage_section
 from sections.process import render_process_section
 from sections.disease import render_disease_section
 from sections.land import render_land_section
+from sections.disaster import render_disaster_section
 
 st.set_page_config(layout="wide")
 # === Load GeoJSON and Crop Risk Data ===
@@ -33,6 +34,7 @@ geojson = load_geojson()
 risk_df = load_data("Datasets/risk_index_by_state_month.csv")
 market_df = load_data("Datasets/market_df.csv")
 full_survey_df = load_data("Datasets/full_survey.csv")
+disaster_df = load_data("Datasets/disaster_df.csv")
 
 # === Streamlit App ===
 
@@ -92,7 +94,7 @@ We analyzed PHL contributors across 5 dimensions. Click to jump to each section:
 - [Disease & Animal Damage](#disease)
 - [Land Quality](#land)
 - [Climate](#climate)
-- [Natural Disasters](#natural-disasters)
+- [Natural Disasters](#disaster)
 """, unsafe_allow_html=True)       
 
 st.markdown("<hr>", unsafe_allow_html=True)
@@ -121,3 +123,6 @@ st.markdown("<hr>", unsafe_allow_html=True)
 render_climate_section(geojson, risk_df)
 st.markdown("<hr>", unsafe_allow_html=True)
 
+# Render Disaster Section
+render_disaster_section(geojson, disaster_df)
+st.markdown("<hr>", unsafe_allow_html=True)
