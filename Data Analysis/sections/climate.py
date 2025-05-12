@@ -2,7 +2,7 @@ import streamlit as st
 import plotly.express as px
 
 def render_climate_section(geojson, risk_df):
-    st.header("🌦️ Climate Risk Analysis")
+    st.header("Climate Risk Analysis")
     st.write("The map below shows monthly climate-related risk of post-harvest losses across Nigerian states, using a crop-specific index — for example, maize is more sensitive to flood and rainfall, while sorghum is more affected by temperature.")
   
     col1, col2, col3= st.columns([1, 3,1])  # Adjust the width ratio (e.g., 1:3)
