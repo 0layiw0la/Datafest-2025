@@ -28,6 +28,7 @@ def load_data(path):
 geojson = load_geojson()
 risk_df = load_data("Datasets/risk_index_by_state_month.csv")
 market_df = load_data("Datasets/market_df.csv")
+full_survey_df = load_data("Datasets/full_survey.csv")
 
 # === Streamlit App ===
 
@@ -80,7 +81,8 @@ st.subheader("Key Risk Factors Considered")
 st.markdown("""
 We analyzed PHL contributors across 5 dimensions. Click to jump to each section:
 
-- [Market Access & Transport](#market-access)
+- [Market Access](#market-access)
+- [Transportation](#transport)
 - [Storage & Processing](#storage--processing)
 - [Disease & Animal Damage](#disease--animal-damage)
 - [Land Quality](#land-quality)
@@ -91,7 +93,7 @@ We analyzed PHL contributors across 5 dimensions. Click to jump to each section:
 st.markdown("<hr>", unsafe_allow_html=True)
 
 # Render Market Section
-render_market_section(geojson,market_df)  
+render_market_section(geojson,market_df,full_survey_df)  
 st.markdown("<hr>", unsafe_allow_html=True)
 
 # Render Climate Section
