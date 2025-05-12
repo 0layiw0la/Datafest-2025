@@ -3,6 +3,8 @@ import pandas as pd
 import json
 from sections.climate import render_climate_section
 from sections.market import render_market_section
+from sections.storage import render_storage_section
+from sections.process import render_process_section
 
 st.set_page_config(layout="wide")
 # === Load GeoJSON and Crop Risk Data ===
@@ -83,7 +85,8 @@ We analyzed PHL contributors across 5 dimensions. Click to jump to each section:
 
 - [Market Access](#market-access)
 - [Transportation](#transport)
-- [Storage & Processing](#storage--processing)
+- [Storage](#storage)
+- [Processing](#process)
 - [Disease & Animal Damage](#disease--animal-damage)
 - [Land Quality](#land-quality)
 - [Climate](#climate)
@@ -94,6 +97,14 @@ st.markdown("<hr>", unsafe_allow_html=True)
 
 # Render Market Section
 render_market_section(geojson,market_df,full_survey_df)  
+st.markdown("<hr>", unsafe_allow_html=True)
+
+# Render Storage Section
+render_storage_section(geojson,full_survey_df)  
+st.markdown("<hr>", unsafe_allow_html=True)
+
+# Render Process Section
+render_process_section(geojson,full_survey_df)  
 st.markdown("<hr>", unsafe_allow_html=True)
 
 # Render Climate Section

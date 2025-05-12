@@ -1,6 +1,7 @@
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+
 def add_space():
     st.markdown("<br><br>", unsafe_allow_html=True)
 
