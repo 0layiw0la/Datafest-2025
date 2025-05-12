@@ -41,7 +41,7 @@ st.markdown(
     html, body, [class*="css"] {
         font-size: 18px;
     .main-title {
-        font-size: 3rem;
+        font-size: 3.3rem;
         text-align: center;
         width: 100%;
         margin-bottom: 20px;

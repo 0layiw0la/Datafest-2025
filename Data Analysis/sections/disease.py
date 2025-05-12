@@ -9,8 +9,8 @@ def add_space(space=2):
 
 
 def render_disease_section(geojson, full_survey_df):
-    st.header("Diseases & Animal Damage")
     st.markdown('<div id="disease"></div>', unsafe_allow_html=True)
+    st.header("Diseases & Animal Damage")
     st.markdown("""
     ### Crop Diseases
     Biological threats such as crop diseases and animal damage can severely undermine post-harvest outcomes. The **map below** allows you to explore these risks by state.       
