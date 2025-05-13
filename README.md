@@ -11,16 +11,20 @@
 
 ## Table of Contents
 1. [About Our Project](#about-our-project)
-2. [Read the Full Report](#read-the-full-report)
-3. [Distribution Solution](#distribution-solution)
-4. [Data & Methodology](#data--methodology)
+
+2. [Distribution Solution](#distribution-solution)
+
+3. [Read the Full Report](#read-the-full-report)
+
+4. [Summary of Report]()
+
+5. [Data & Methodology](#data--methodology)
+
     - [Datasets Used](#datasets-used)
     - [Transformations & Tasks](#transformations--tasks)
     - [Environmental Variables Chosen](#environmental-variables-chosen)
     - [Transformations & Index Logic](#transformations--index-logic)
     - [Why Separate Climate Risk?](#why-separate-climate-risk)
-5. [Repository Structure](#repository-structure)
-
 ---
 
 ## About Our Project
@@ -28,27 +32,12 @@
 CyberFarm combines data analysis and digital tools to tackle post-harvest losses (PHL) in Nigeria.
 
 We focus on two core deliverables:
-1. A **PHL Feasibility Report** exploring market risks, designed to help **young investors** and **agripreneurs** understand:
+1. A **Hybrid Distribution Solution** (Web + USSD) for farmers and distributors alike, meant to connect them to the nearest service they need.
+
+2. A **PHL Feasibility Report** exploring market risks, designed to help **young investors** and **agripreneurs** understand:
     - What causes PHL and where the risks lie,
     - How to interpret state-level data to minimize those risks,
     - And where opportunities exist for safe, profitable investment in Nigeria’s agricultural value chain.
-
-2. A **Hybrid Distribution Solution** (Web + USSD) for farmers and distributors alike, meant to connect them to the nearest service they need.
-
-
-## Read the Full Report
-
-👉 **[Open the PHL Analysis Report](your_link_here)**
-
-Includes:
-- Key risk drivers by state 
-- Market access and transport analysis
-- Storage and processing analysis
-- Climate risk heatmaps by crop & month   
-- Opportunity mapping for youth agripreneurs
-
----
-
 
 ## Distribution Solution
 
@@ -63,6 +52,18 @@ Includes:
 
 ---
 
+## Read the Full Report
+
+👉 **[Open the PHL Analysis Report](your_link_here)**
+
+Includes:
+- Key risk drivers by state 
+- Market access and transport analysis
+- Storage and processing analysis
+- Climate risk heatmaps by crop & month   
+- Opportunity mapping for youth agripreneurs
+
+---
 
 ## 🧪 Data & Methodology
 
@@ -176,17 +177,3 @@ We isolate **climate risk** because:
 This makes it ideal for monthly visualization and early-warning planning, especially for storage and processing logistics.
 
 
-## Repository Structure
-
-```bash
-├── data/
-│   └── all_states_climate_2022_with_flood.csv
-├── notebooks/
-│   └── climate_risk_index.ipynb
-├── app/
-│   └── frontend/ (web)
-│   └── ussd/ (backend logic)
-├── static/
-│   └── plots/
-│   └── videos/
-└── [README.md](http://_vscodecontentref_/2)
