@@ -25,18 +25,20 @@ def load_geojson():
     return geojson_data
 
 @st.cache_data
-def load_data(path):
-    df = pd.read_csv(path)  
+def load_data(filename):
+    file_path = os.path.join(os.path.dirname(__file__), "Datasets", filename)
+    df = pd.read_csv(file_path)
     df["state"] = df["state"].str.lower().str.strip()  # Normalize state names
-    df["state"] = df['state'].replace("abuja","federalcapitalterritory")
-    df["state"] = df['state'].replace("fct","federalcapitalterritory")
+    df["state"] = df['state'].replace("abuja", "federalcapitalterritory")
+    df["state"] = df['state'].replace("fct", "federalcapitalterritory")
     return df
 
+# Load all datasets
 geojson = load_geojson()
-risk_df = load_data("Datasets/risk_index.csv")
-market_df = load_data("Datasets/market_df.csv")
-full_survey_df = load_data("Datasets/full_survey.csv")
-disaster_df = load_data("Datasets/disaster_df.csv")
+risk_df = load_data("risk_index.csv")
+market_df = load_data("market_df.csv")
+full_survey_df = load_data("full_survey.csv")
+disaster_df = load_data("disaster_df.csv")
 
 # === Streamlit App ===
 
