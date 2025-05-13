@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 About Our Project
+## About Our Project
 
 CyberFarm combines data analysis and digital tools to tackle post-harvest losses (PHL) in Nigeria.
 
@@ -24,7 +24,7 @@ We focus on two core deliverables:
 ---
 
 ## 📖 Table of Contents
-1. [About Our Project](#📌-about-our-project)
+1. [About Our Project](#about-our-project)
 2. [Read the Full Report](#read-the-full-report)
 3. [Data & Methodology](#data--methodology)
    - [Datasets Used](#datasets-used)
