@@ -86,4 +86,4 @@ def render_disease_section(geojson, full_survey_df):
         add_space(1)
 
     st.markdown("From the map we can see that the **middle belt** is the hotspot for animal damage.")
-    add_space(2)
+    

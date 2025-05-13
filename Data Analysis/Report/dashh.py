@@ -31,7 +31,7 @@ def load_data(path):
     return df
 
 geojson = load_geojson()
-risk_df = load_data("Datasets/risk_index_by_state_month.csv")
+risk_df = load_data("Datasets/risk_index.csv")
 market_df = load_data("Datasets/market_df.csv")
 full_survey_df = load_data("Datasets/full_survey.csv")
 disaster_df = load_data("Datasets/disaster_df.csv")
@@ -125,4 +125,4 @@ st.markdown("<hr>", unsafe_allow_html=True)
 
 # Render Disaster Section
 render_disaster_section(geojson, disaster_df)
-st.markdown("<hr>", unsafe_allow_html=True)
+

@@ -150,7 +150,7 @@ def render_land_section(geojson, full_survey_df):
             color_discrete_sequence=px.colors.sequential.YlOrRd
         )
         st.plotly_chart(fig, use_container_width=True)
-        add_space(2)
+        
 
 
 

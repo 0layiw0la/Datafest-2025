@@ -30,7 +30,7 @@ def render_storage_section(geojson, full_survey_df):
 
     counts = counts.reset_index()
 
-    col1,col2,col3 = st.columns([1,4,1])
+    col1,col2,col3 = st.columns([1,4.5,1])
 
     with col2:
         fig = px.choropleth_mapbox(
@@ -50,4 +50,4 @@ def render_storage_section(geojson, full_survey_df):
 
         fig.update_layout(margin={"r": 0, "t": 30, "l": 0, "b": 0})
         st.plotly_chart(fig, use_container_width=True)
-        add_space()
+    
