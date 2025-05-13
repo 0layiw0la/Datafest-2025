@@ -9,6 +9,20 @@
 
 ---
 
+## Table of Contents
+1. [About Our Project](#about-our-project)
+2. [Read the Full Report](#read-the-full-report)
+3. [Data & Methodology](#data--methodology)
+    - [Datasets Used](#datasets-used)
+    - [Transformations & Tasks](#transformations--tasks)
+    - [Environmental Variables Chosen](#environmental-variables-chosen)
+    - [Transformations & Index Logic](#transformations--index-logic)
+    - [Why Separate Climate Risk?](#why-separate-climate-risk)
+4. [Distribution Solution](#distribution-solution)
+5. [Repository Structure](#repository-structure)
+
+---
+
 ## About Our Project
 
 CyberFarm combines data analysis and digital tools to tackle post-harvest losses (PHL) in Nigeria.
@@ -21,21 +35,6 @@ We focus on two core deliverables:
 
 2. A **Hybrid Distribution Solution** (Web + USSD) for farmers and distributors alike, meant to connect them to the nearest service they need.
 
----
-
-## 📖 Table of Contents
-1. [About Our Project](#about-our-project)
-2. [Read the Full Report](#read-the-full-report)
-3. [Data & Methodology](#data--methodology)
-   - [Datasets Used](#datasets-used)
-   - [Transformations & Tasks](#transformations--tasks)
-4. [Environmental Variables Chosen](#environmental-variables-chosen)
-5. [Transformations & Index Logic](#transformations--index-logic)
-6. [Why Separate Climate Risk?](#why-separate-climate-risk)
-7. [Distribution Solution](#distribution-solution)
-8. [Repository Structure](#repository-structure)
-
----
 
 ## Read the Full Report
 
