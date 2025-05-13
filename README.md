@@ -12,13 +12,13 @@
 ## Table of Contents
 1. [About Our Project](#about-our-project)
 2. [Read the Full Report](#read-the-full-report)
-3. [Data & Methodology](#data--methodology)
+3. [Distribution Solution](#distribution-solution)
+4. [Data & Methodology](#data--methodology)
     - [Datasets Used](#datasets-used)
     - [Transformations & Tasks](#transformations--tasks)
     - [Environmental Variables Chosen](#environmental-variables-chosen)
     - [Transformations & Index Logic](#transformations--index-logic)
     - [Why Separate Climate Risk?](#why-separate-climate-risk)
-4. [Distribution Solution](#distribution-solution)
 5. [Repository Structure](#repository-structure)
 
 ---
@@ -49,6 +49,21 @@ Includes:
 
 ---
 
+
+## Distribution Solution
+
+### How It Works:
+- **Web App:** Maps nearest markets, storage points, and transport options
+- **USSD Interface:** Offline farmers can access services and report losses
+- **Dashboard:** Tracks reports and helps decision-makers allocate support
+
+🔗 [Try the Web App](your_link_here)  
+📞 USSD Demo: `*123*456#` (via emulator or video)  
+🎥 [Watch Demo Video](your_link_here)
+
+---
+
+
 ## 🧪 Data & Methodology
 
 ### **Datasets Used**
@@ -57,7 +72,7 @@ Includes:
 - [**National Agricultural Sample Census (2022)**](https://microdata.nigerianstat.gov.ng/index.php/catalog/80/get-microdata) – Community-level data on agro-processing, storage, transportation, and land degradation, disasters, and market access.
 
 
-### Note: You can review the transformations and anlysis jupyter notebooks [here](https://github.com/0layiw0la/Datafest-2025/tree/main/Data%20Analysis/jupyter_notebooks) instead.
+### Note: You can review the transformations and anlysis jupyter notebooks [here instead](https://github.com/0layiw0la/Datafest-2025/tree/main/Data%20Analysis/jupyter_notebooks).
 ---
 
 ### **Transformations & Tasks**
@@ -160,18 +175,6 @@ We isolate **climate risk** because:
 
 This makes it ideal for monthly visualization and early-warning planning, especially for storage and processing logistics.
 
-## Distribution Solution
-
-### How It Works:
-- **Web App:** Maps nearest markets, storage points, and transport options
-- **USSD Interface:** Offline farmers can access services and report losses
-- **Dashboard:** Tracks reports and helps decision-makers allocate support
-
-🔗 [Try the Web App](your_link_here)  
-📞 USSD Demo: `*123*456#` (via emulator or video)  
-🎥 [Watch Demo Video](your_link_here)
-
----
 
 ## Repository Structure
 
