@@ -78,7 +78,7 @@ Yet despite its potential, agriculture remains risky, especially for young entre
 - How to interpret state-level data to minimize those risks,
 - And where opportunities exist for safe, profitable investment in Nigeria’s agricultural value chain.
 
-By analyzing patterns across crops, seasons, and regions, this dashboard equips you to make **data-informed decisions** about **how**, **when**, and **where** to invest in agriculture.
+By analyzing patterns across crops, seasons, and regions, this report equips you to make **data-informed decisions** about **how**, **when**, and **where** to invest in agriculture.
 
 """)
 
