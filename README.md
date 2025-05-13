@@ -1,6 +1,6 @@
 # Data-Driven Solutions to Post-Harvest Losses in Nigeria
 
-### 👥 Team: CyberFarm
+### Team: CyberFarm
 
 **Team Members**
 - Ibrahim Abdulrahim – Data Analysis & Visualizations  
@@ -37,7 +37,7 @@ We focus on two core deliverables:
 
 ---
 
-## 📊 Read the Full Report
+## Read the Full Report
 
 👉 **[Open the PHL Analysis Report](your_link_here)**
 
@@ -161,7 +161,7 @@ We isolate **climate risk** because:
 
 This makes it ideal for monthly visualization and early-warning planning, especially for storage and processing logistics.
 
-## ⚙️ Distribution Solution
+## Distribution Solution
 
 ### How It Works:
 - **Web App:** Maps nearest markets, storage points, and transport options
@@ -174,7 +174,7 @@ This makes it ideal for monthly visualization and early-warning planning, especi
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```bash
 ├── data/
