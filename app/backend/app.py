@@ -1,7 +1,8 @@
 import os
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
-from flask_cors import CORS  # Import CORS
+from flask_cors import CORS
+from flask_migrate import Migrate  # Add this import
 from models import db, User
 from werkzeug.security import generate_password_hash, check_password_hash
 from dotenv import load_dotenv
@@ -15,8 +16,12 @@ app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'sqlite:///test.db')
 db.init_app(app)
 
+# Initialize Flask-Migrate
+migrate = Migrate(app, db)  # Add this line
+
 # Enable CORS for the React frontend
 CORS(app, supports_credentials=True, origins=["http://localhost:5173"])
+
 
 @app.route('/api/register', methods=['POST'])
 def register():
