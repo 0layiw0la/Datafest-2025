@@ -47,8 +47,9 @@ We focus on two core deliverables:
 - **Dashboard:** Tracks reports and helps decision-makers allocate support
 
 🔗 [Try the Web App](your_link_here)  
-📞 USSD Demo: `*123*456#` (via emulator or video)  
-🎥 [Watch Demo Video](your_link_here)
+📞 USSD Demo: `*384*18739#` (via Africa's Talking USSD emulator)  
+
+🎥 ![Watch Demo Video](https://drive.google.com/file/d/1EjnBJqteH5ApkImZlEBYGtaHuqoPQ_Iw/view)
 
 ---
 
