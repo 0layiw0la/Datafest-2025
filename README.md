@@ -56,6 +56,8 @@ Includes:
 - **Flood Incidence Reports** – Extracted from [NEMA](https://data.humdata.org/dataset/nigeria-nema-flood-affected-geographical-areasnorth-east-nigeria-flood-affected-geographical-areas/resource/833fe41d-1b92-4ca8-bfa0-8b483ed81690) for flood occurrences in 2022.
 - [**National Agricultural Sample Census (2022)**](https://microdata.nigerianstat.gov.ng/index.php/catalog/80/get-microdata) – Community-level data on agro-processing, storage, transportation, and land degradation, disasters, and market access.
 
+
+### Note: You can review the transformations and anlysis jupyter notebooks [here](https://github.com/0layiw0la/Datafest-2025/tree/main/Data%20Analysis/jupyter_notebooks) instead.
 ---
 
 ### **Transformations & Tasks**
