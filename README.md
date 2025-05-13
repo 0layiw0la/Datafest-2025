@@ -13,11 +13,13 @@
 1. [About Our Project](#about-our-project)
 2. [Read the Full Report](#read-the-full-report)
 3. [Data & Methodology](#data--methodology)
-   - [Datasets Used](#datasets-used)
-   - [Transformations & Tasks](#transformations--tasks)
-   - [Environmental Variables Chosen](#environmental-variables-chosen)
-   - [Transformations & Index Logic](#transformations--index-logic)
-   - [Why Separate Climate Risk?](#why-separate-climate-risk)
+
+- [Datasets Used](#datasets-used)
+- [Transformations & Tasks](#transformations--tasks)
+- [Environmental Variables Chosen](#environmental-variables-chosen)
+- [Transformations & Index Logic](#transformations--index-logic)
+- [Why Separate Climate Risk?](#why-separate-climate-risk)
+
 4. [Distribution Solution](#distribution-solution)
 5. [Repository Structure](#repository-structure)
 
@@ -35,7 +37,6 @@ We focus on two core deliverables:
 
 2. A **Hybrid Distribution Solution** (Web + USSD) for farmers and distributors alike, meant to connect them to the nearest service they need.
 
----
 
 ## 📊 Read the Full Report
 
@@ -55,9 +56,7 @@ Includes:
 ### **Datasets Used**
 - Nigerian **State-level Climate Data (2022)** – Scraped from [FAO's Climate Information Tool](https://aquastat.fao.org/climate-information-tool/) for all 36 states.
 - **Flood Incidence Reports** – Extracted from [NEMA](https://data.humdata.org/dataset/nigeria-nema-flood-affected-geographical-areasnorth-east-nigeria-flood-affected-geographical-areas/resource/833fe41d-1b92-4ca8-bfa0-8b483ed81690) for flood occurrences in 2022.
-- **National Agricultural Sample Census (2022)** – Community-level data on agro-processing, storage, transportation, and land degradation.
-- **Market Access Data** – Includes market location, distance, and type for farmers across Nigeria.
-- **Disaster Impact Data** – Reports on disaster frequency, crop losses, and economic impacts over the past three years.
+- [**National Agricultural Sample Census (2022)**](https://microdata.nigerianstat.gov.ng/index.php/catalog/80/get-microdata) – Community-level data on agro-processing, storage, transportation, and land degradation, disasters, and market access.
 
 ---
 
