@@ -10,8 +10,8 @@
 ---
 
 ## 📖 Table of Contents
-1. [About Our Project](#about-our-project)
-2. [Read the Full Report](#read-the-full-report)
+- [About Our Project](#about-our-project)
+- [Read the Full Report](#read-the-full-report)
 3. [Data & Methodology](#data--methodology)
 
 - [Datasets Used](#datasets-used)
