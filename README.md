@@ -9,20 +9,6 @@
 
 ---
 
-## 📌 About Our Project
-
-CyberFarm combines data analysis and digital tools to tackle post-harvest losses (PHL) in Nigeria.
-
-We focus on two core deliverables:
-1. A **PHL Feasibility Report** exploring market risks, designed to help **young investors** and **agripreneurs** understand:
-    - What causes PHL and where the risks lie,
-    - How to interpret state-level data to minimize those risks,
-    - And where opportunities exist for safe, profitable investment in Nigeria’s agricultural value chain.
-
-2. A **Hybrid Distribution Solution** (Web + USSD) for farmers and distributors alike, meant to connect them to the nearest service they need.
-
----
-
 ## 📖 Table of Contents
 1. [About Our Project](#about-our-project)
 2. [Read the Full Report](#read-the-full-report)
@@ -34,6 +20,20 @@ We focus on two core deliverables:
    - [Why Separate Climate Risk?](#why-separate-climate-risk)
 4. [Distribution Solution](#distribution-solution)
 5. [Repository Structure](#repository-structure)
+
+---
+
+## 📌 About Our Project
+
+CyberFarm combines data analysis and digital tools to tackle post-harvest losses (PHL) in Nigeria.
+
+We focus on two core deliverables:
+1. A **PHL Feasibility Report** exploring market risks, designed to help **young investors** and **agripreneurs** understand:
+    - What causes PHL and where the risks lie,
+    - How to interpret state-level data to minimize those risks,
+    - And where opportunities exist for safe, profitable investment in Nigeria’s agricultural value chain.
+
+2. A **Hybrid Distribution Solution** (Web + USSD) for farmers and distributors alike, meant to connect them to the nearest service they need.
 
 ---
 
