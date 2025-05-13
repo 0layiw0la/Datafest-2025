@@ -8,12 +8,14 @@ from sections.process import render_process_section
 from sections.disease import render_disease_section
 from sections.land import render_land_section
 from sections.disaster import render_disaster_section
+import os
 
 st.set_page_config(layout="wide")
 # === Load GeoJSON and Crop Risk Data ===
 @st.cache_data
 def load_geojson():
-    with open("gadm41_NGA_1.json", "r") as f:
+    file_path = os.path.join(os.path.dirname(__file__), "gadm41_NGA_1.json")
+    with open(file_path, "r") as f:
         geojson_data = json.load(f)
     
     # Normalize state names in GeoJSON
