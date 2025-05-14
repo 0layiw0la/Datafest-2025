@@ -79,7 +79,7 @@ function Home() {
     }
 
     try {
-      const response = await axios.post("http://127.0.0.1:5000/api/home", {
+      const response = await axios.post("https://cyberfarm.onrender.com/api/home", {
         username, // Send username with the request
         search_role: search,
       });

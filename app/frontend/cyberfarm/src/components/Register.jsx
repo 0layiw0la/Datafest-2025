@@ -37,7 +37,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://127.0.0.1:5000/api/register", formData);
+      const response = await axios.post("https://cyberfarm.onrender.com/api/register", formData);
       navigate("/login");
     } catch (error) {
       console.error("Registration failed:", error);
