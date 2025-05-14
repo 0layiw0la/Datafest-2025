@@ -14,7 +14,7 @@
 
 2. [Distribution Solution](#distribution-solution)
 
-3. [Read the Full Report](#read-the-full-report)
+3. [Post Harvest Loss Report](#read-the-full-report)
 
 4. [Summary of Report]()
 
@@ -39,17 +39,52 @@ We focus on two core deliverables:
     - How to interpret state-level data to minimize those risks,
     - And where opportunities exist for safe, profitable investment in Nigeria’s agricultural value chain.
 
-## Distribution Solution
+---
 
-### How It Works:
-- **Web App:** Maps nearest markets, storage points, and transport options
-- **USSD Interface:** Offline farmers can access services and report losses
-- **Dashboard:** Tracks reports and helps decision-makers allocate support
+## Distribution Solution  
+**Connecting Farmers to Storage, Transport & Opportunity**
 
-🔗 [Try the Web App](your_link_here)  
-📞 USSD Demo: `*384*18739#` (via Africa's Talking USSD emulator)  
+From our analysis, one of the biggest contributors to post-harvest loss (PHL) in Nigeria is the lack of access to affordable storage, reliable transport, and nearby markets, especially for rural and smallholder farmers.
 
-🎥 ![Watch Demo Video](https://drive.google.com/file/d/1EjnBJqteH5ApkImZlEBYGtaHuqoPQ_Iw/view)
+### What We're Building  
+We developed a smart digital platform that connects farmers with key post-harvest services: cold truck operators, storage providers, and nearby markets. The goal is to bridge infrastructure gaps and reduce losses that occur between harvest and sale.
+
+### Built for Every Farmer, Even Without the Internet  
+To ensure universal access, the system works in two ways:
+- **Web App**: For farmers, transporters, and storage providers with smartphones or internet access  
+  [Try the Web App](https://cyberfarmdf.netlify.app)
+- **USSD Access**: Designed for smallholder, rural, and illiterate farmers using basic phones.  
+  Through USSD, users can input their location and receive SMS-based contact details of nearby storage providers.
+
+> Note: The USSD version offers limited functionality, it's focused on helping farmers **locate the nearest storage** via SMS. Full service requests and role-based features are only available through the web app.
+
+For example, a farmer in Nasarawa can dial a code, input their location, and receive a list of nearby storage providers, no smartphone required.
+
+### Unlocking Opportunity for Youth Entrepreneurs  
+This system doesn’t only serve farmers, it also enables youth to participate in agriculture through service delivery:
+- Young people can register as cold chain or storage providers.
+- They get matched with farmers in need of services.
+- This unlocks micro-business opportunities in transport, warehousing, and aggregation, without needing farmland.
+
+### Why This Matters  
+The Federal Ministry of Agriculture and Rural Development estimates that Nigeria loses **30–50% of its perishable crops annually**, costing nearly **$9 billion**. These losses threaten food security, farmer income, and youth employment.
+
+By connecting farmers to the support they need, our platform helps:
+- Reduce preventable food losses  
+- Improve farmer profitability  
+- Create youth-led agri-business opportunities  
+
+### How It Works  
+- **Role-Based Sign Up**: Users register as a farmer, storage provider, or cold truck operator  
+- **Automatic Geolocation**: Farmers are matched with the 5 nearest providers using Google Maps API  
+- **Request or Offer Services**: Farmers request transport or storage, while providers find clients  
+- **Offline USSD Support**: Ensures farmers without internet can still access nearby storage services
+
+**Web App:**  [Try the Web App](https://cyberfarmdf.netlify.app)
+
+**USSD Demo :**
+
+![USSD Demo](https://github.com/0layiw0la/Datafest-2025/blob/main/cyberfarmussd.gif) 
 
 ---
 
