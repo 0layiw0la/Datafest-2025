@@ -4,7 +4,7 @@
 
 **Team Members**
 - Ibrahim Abdulrahim – Data Analysis & Fullstack (Web App)
-- Chi-Ife Ileka – Data Engineering
+- Chi-Ife Ileka – UI/UX design & Data Analysis
 - Toluwase Shoniran – Backend / USSD Integration  
 
 
