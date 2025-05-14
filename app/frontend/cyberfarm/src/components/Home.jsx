@@ -102,7 +102,7 @@ function Home() {
       {/* Header */}
       <header className="w-full py-4">
         <div className="container ml-16 flex justify-start items-center px-4">
-          <h1 style={{ fontSize: "4rem", fontWeight: "bold", color: "#6fbf73" }}>CyberFarm</h1>
+          <h1 style={{ fontWeight: "bold", color: "#6fbf73" }} className="text-3xl md:text-5xl">CyberFarm</h1>
         </div>
       </header>
 
@@ -140,7 +140,7 @@ function Home() {
       </div>
 
       {/* Map Section */}
-      <div className="mt-12 w-[90%] md:w-full mx-auto md:mx-1 max-w-4xl px-14 md:px-4">
+      <div className="mt-12 w-[90vw] md:w-full mx-auto md:mx-1 max-w-4xl px-4 md:px-4">
         {isLocationLoaded ? (
           <MapContainer center={userLocation} zoom={13} style={{ height: "400px", width: "100%" }}>
             <TileLayer
