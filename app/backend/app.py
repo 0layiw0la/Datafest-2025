@@ -144,7 +144,7 @@ def home():
 
 
 ##cron jobs
-@app.route('/cron', methods=['POST'])
+@app.route('/cron', methods=['GET'])
 def cron():
     print("[INFO] Cron job triggered")
 
