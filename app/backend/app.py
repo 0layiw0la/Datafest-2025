@@ -118,7 +118,7 @@ def home():
                             "latitude": current_location[0],
                             "longitude": current_location[1]
                         },
-                        "radius": 30000.0  # meters
+                        "radius": 60000.0  # 60km
                     }
                 }
             }
@@ -147,6 +147,7 @@ def home():
 @app.route('/cron', methods=['GET'])
 def cron():
     print("[INFO] Cron job triggered")
+    return 'hello', 200
 
 def keep_alive():
     while True:
