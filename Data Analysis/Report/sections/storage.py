@@ -12,7 +12,7 @@ def render_storage_section(geojson, full_survey_df):
     st.markdown('<div id="storage"></div>', unsafe_allow_html=True)
     st.markdown("""
     Access to storage is a critical problem in the post-harvest chain. The map below shows just how serious the problem is. 
-    **21 out of 37 states** report that **over  90%** of respondents do **not** have access to storage facilities. And **Sokoto with the most access**
+    **21 out of 36 states** report that **over  90%** of respondents do **not** have access to storage facilities. And **Sokoto with the most access**
     having only **20.6% with storage**.
                 
     This is not just a rural issue, seeing as **Lagos has the highest number** of respondents **without** access to storage.

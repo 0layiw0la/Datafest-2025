@@ -25,6 +25,8 @@
     - [Environmental Variables Chosen](#environmental-variables-chosen)
     - [Transformations & Index Logic](#transformations--index-logic)
     - [Why Separate Climate Risk?](#why-separate-climate-risk)
+
+6. [Guide through the files](#repo-guide)
 ---
 
 ## About Our Project
@@ -109,7 +111,7 @@ Includes:
 
 ---
 
-## 🧪 Data & Methodology
+## Data & Methodology
 
 ### **Datasets Used**
 - Nigerian **State-level Climate Data (2022)** – Scraped from [FAO's Climate Information Tool](https://aquastat.fao.org/climate-information-tool/) for all 36 states.
@@ -219,5 +221,52 @@ We isolate **climate risk** because:
 - It's measurable with available meteorological data.
 
 This makes it ideal for monthly visualization and early-warning planning, especially for storage and processing logistics.
+
+---
+
+## Repo Guide
+## Repo Guide
+
+Here’s an overview of the key folders in this project:
+
+```
+Datafest-2025
+├── Data Analysis
+|   |
+│   ├── chromedriver-win64/
+│   ├── Datasets/
+│   ├── jupyter_notebooks/
+│   └── Report/
+│
+├── app
+│   ├── backend
+│   │   ├── app.py
+│   │   ├── models.py
+│   │   ├── requirements.txt
+│   │
+│   └── frontend
+│       └── cyberfarm
+│           ├── index.html
+│           ├── src/
+│           └── ...
+│
+└── README.md
+```
+
+**Key Directories**  
+- **Data Analysis**: Contains Jupyter notebooks, data processing scripts, and raw datasets. 
+  - **Report**: Contains code for the final report including processed datasets.
+    - **Datasets**: CLeaned data used for visualizations
+    - **sections & dashh.py**: sections contains code for each section of the report whilst dashh.py is the main file (streamlit run dashh.py to view full report on local)
+  - **jupter_notebooks**: Contains all the code for data collection, cleaning and transformation.
+  - **Datasets**: All the raw unprocessed data
+    - **Anonymized Data**: The raw files from the [**National Agricultural Sample Census (2022)**](https://microdata.nigerianstat.gov.ng/index.php/catalog/80/get-microdata)
+    - **AquaStat Data Each state**: Climate data for each state from [FAO's Climate Information Tool](https://aquastat.fao.org/climate-information-tool/)
+    - **all_states_climate_2022**: Aggregation of data from all 36 states
+    - **flood_data_2022**: Flood incidence reports from [NEMA](https://data.humdata.org/dataset/nigeria-nema-flood-affected-geographical-areasnorth-east-nigeria-flood-affected-geographical-areas/resource/833fe41d-1b92-4ca8-bfa0-8b483ed81690) for flood occurrences in 2022.
+
+- **app**: Contains all application-related code.  
+  - **backend**: Flask-based server, database models, migration scripts, and environment configuration.  
+  - **frontend** → **cyberfarm**: React-based client application with main entry points, components, and build artifacts.
 
 
