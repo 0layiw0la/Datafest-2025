@@ -225,7 +225,6 @@ This makes it ideal for monthly visualization and early-warning planning, especi
 ---
 
 ## Repo Guide
-## Repo Guide
 
 Here’s an overview of the key folders in this project:
 
