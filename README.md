@@ -7,7 +7,7 @@
 - Chi-Ife Ileka – Data Engineering
 - Toluwase Shoniran – Backend / USSD Integration  
 
----
+
 
 ## Table of Contents
 1. [About Our Project](#about-our-project)
@@ -60,9 +60,13 @@ We developed a smart digital platform that connects farmers with key post-harves
 
 > Note: we've created a test user for quick review. (username = testuser,password = password)
 
+**Web App Demo :**
+
+![Web App Demo](cyberfarmweb.gif)
+
 **USSD Demo :**
 
-![USSD Demo](https://github.com/0layiw0la/Datafest-2025/blob/main/cyberfarmussd.gif) 
+![USSD Demo](cyberfarmussd.gif) 
 
 
 ### Built for Every Farmer, Even Without the Internet  
