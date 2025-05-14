@@ -107,7 +107,7 @@ function Home() {
       </header>
 
       {/* Search Section */}
-      <div className="mt-8 w-full max-w-2xl px-4">
+      <div className="md:mt-8 mt-4 w-full max-w-2xl px-4">
         <form onSubmit={handleSearch} className="flex items-center">
           <input
             type="text"
