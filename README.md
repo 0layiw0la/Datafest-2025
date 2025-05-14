@@ -3,8 +3,8 @@
 ### Team: CyberFarm
 
 **Team Members**
-- Ibrahim Abdulrahim – Data Analysis & Visualizations  
-- Chi-Ife Ileka – Frontend Developer  
+- Ibrahim Abdulrahim – Data Analysis & Fullstack (Web App)
+- Chi-Ife Ileka – Data Engineering
 - Toluwase Shoniran – Backend / USSD Integration  
 
 ---
@@ -49,10 +49,26 @@ From our analysis, one of the biggest contributors to post-harvest loss (PHL) in
 ### What We're Building  
 We developed a smart digital platform that connects farmers with key post-harvest services: cold truck operators, storage providers, and nearby markets. The goal is to bridge infrastructure gaps and reduce losses that occur between harvest and sale.
 
+
+### How It Works  
+- **Role-Based Sign Up**: Users register as a farmer, storage provider, or cold truck operator  
+- **Automatic Geolocation**: Farmers are matched with the 10 nearest providers within a 30km radius, first doing a search within our userbase then expanding using Google Maps API to find more if needed.  
+- **Request or Offer Services**: Farmers request transport or storage, while providers find clients  
+- **Offline USSD Support**: Ensures farmers without internet can still access nearby storage services
+
+**Web App:**  [Try the Web App](https://cyberfarmdf.netlify.app)
+
+> Note: we've created a test user for quick review. (username = testuser,password = password)
+
+**USSD Demo :**
+
+![USSD Demo](https://github.com/0layiw0la/Datafest-2025/blob/main/cyberfarmussd.gif) 
+
+
 ### Built for Every Farmer, Even Without the Internet  
-To ensure universal access, the system works in two ways:
+To ensure wider access, the system works in two ways:
 - **Web App**: For farmers, transporters, and storage providers with smartphones or internet access  
-  [Try the Web App](https://cyberfarmdf.netlify.app)
+
 - **USSD Access**: Designed for smallholder, rural, and illiterate farmers using basic phones.  
   Through USSD, users can input their location and receive SMS-based contact details of nearby storage providers.
 
@@ -72,19 +88,7 @@ The Federal Ministry of Agriculture and Rural Development estimates that Nigeria
 By connecting farmers to the support they need, our platform helps:
 - Reduce preventable food losses  
 - Improve farmer profitability  
-- Create youth-led agri-business opportunities  
-
-### How It Works  
-- **Role-Based Sign Up**: Users register as a farmer, storage provider, or cold truck operator  
-- **Automatic Geolocation**: Farmers are matched with the 5 nearest providers using Google Maps API  
-- **Request or Offer Services**: Farmers request transport or storage, while providers find clients  
-- **Offline USSD Support**: Ensures farmers without internet can still access nearby storage services
-
-**Web App:**  [Try the Web App](https://cyberfarmdf.netlify.app)
-
-**USSD Demo :**
-
-![USSD Demo](https://github.com/0layiw0la/Datafest-2025/blob/main/cyberfarmussd.gif) 
+- Create youth-led agri-business opportunities   
 
 ---
 
