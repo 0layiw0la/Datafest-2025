@@ -101,8 +101,8 @@ function Home() {
     <div style={{ backgroundColor: "#d4edda", minHeight: "100vh" }} className="flex flex-col items-center">
       {/* Header */}
       <header className="w-full py-4">
-        <div className="container ml-16 flex justify-start items-center px-4">
-          <h1 style={{ fontWeight: "bold", color: "#6fbf73" }} className="text-3xl md:text-5xl">CyberFarm</h1>
+        <div className="container ml-4 md:ml-16 flex justify-start items-center px-4">
+          <h1 style={{ fontWeight: "bold", color: "#6fbf73" }} className="text-2xl md:text-5xl">CyberFarm</h1>
         </div>
       </header>
 
