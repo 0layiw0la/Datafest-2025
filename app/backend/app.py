@@ -13,14 +13,14 @@ load_dotenv()
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'sqlite:///test.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
 db.init_app(app)
 
 # Initialize Flask-Migrate
 migrate = Migrate(app, db)  # Add this line
 
 # Enable CORS for the React frontend
-CORS(app, supports_credentials=True, origins=["http://localhost:5173"])
+CORS(app, supports_credentials=True, origins=["http://localhost:5173","https://cyberfarmdf.netlify.app"])
 
 
 @app.route('/api/register', methods=['POST'])
