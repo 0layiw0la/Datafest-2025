@@ -248,7 +248,11 @@ Datafest-2025
 │           ├── index.html
 │           ├── src/
 │           └── ...
-│
+|
+├── ussd
+|   |── api
+|
+|
 └── README.md
 ```
 
@@ -267,5 +271,7 @@ Datafest-2025
 - **app**: Contains all application-related code.  
   - **backend**: Flask-based server, database models, migration scripts, and environment configuration.  
   - **frontend** → **cyberfarm**: React-based client application with main entry points, components, and build artifacts.
+
+- **ussd** : Contains the code for the ussd solution.
 
 
