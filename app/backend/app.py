@@ -8,6 +8,9 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from dotenv import load_dotenv
 from math import radians, cos, sin, asin, sqrt
 import requests
+import threading
+import time
+
 
 load_dotenv()
 
@@ -138,6 +141,24 @@ def home():
     except Exception as e:
         print(f"[ERROR] /api/home: Failed to fetch nearest users - {e}")
         return jsonify({'message': 'Failed to fetch nearest users'}), 500
+
+
+##cron jobs
+@app.route('/cron', methods=['POST'])
+def cron():
+    print("[INFO] Cron job triggered")
+
+def keep_alive():
+    while True:
+        try:
+            requests.get("https://cyberfarm.onrender.com/cron")
+            print("Pinged the app to keep it alive!")
+        except Exception as e:
+            print(f"Error pinging: {e}")
+        time.sleep(15) 
+
+# Start keep_alive() in a separate thread
+threading.Thread(target=keep_alive, daemon=True).start()
 
 if __name__ == "__main__":
     with app.app_context():
