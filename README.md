@@ -34,7 +34,7 @@
 CyberFarm combines data analysis and digital tools to tackle post-harvest losses (PHL) in Nigeria.
 
 We focus on two core deliverables:
-1. A **Hybrid Distribution Solution** (Web + USSD) for farmers and distributors alike, meant to connect them to the nearest service they need.
+1. A **Hybrid Distribution Solution** (Web + USSD) for farmers and distributors alike, meant to connect them to the nearest service they need. The goal with this was accessability, making it so with even a simple "button phone" our services can be used.
 
 2. A **PHL Feasibility Report** exploring market risks, designed to help **young investors** and **agripreneurs** understand:
     - What causes PHL and where the risks lie,
